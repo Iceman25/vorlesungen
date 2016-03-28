@@ -1201,13 +1201,13 @@ Namen von Klassen, Felder und Methoden müssen einem festgelegten Schema entspre
 \[CONST:~\frac{c \in Const}{\Gamma \vdash c~:~\tau_c}\]
 
 \subsubsection{\texttt{VAR}}
-\[VAR:~\frac{\Gamma(x)=\tau}{\Gamma \vdash x~:~\tau},~Constrait: \frac{\alpha_1~\alpha_2}{} \Rightarrow \alpha_1 = \alpha_2\]
+\[VAR:~\frac{\Gamma(x)=\tau}{\Gamma \vdash x~:~\tau},~Constraint: \frac{\alpha_1~\alpha_2}{} \Rightarrow \alpha_1 = \alpha_2\]
 
 \subsubsection{\texttt{ABS}}
-\[ABS:~\frac{\Gamma,x~:~\tau_1 \vdash t~:~\tau_2}{\Gamma \vdash \lambda x.t~:~\tau_1 \rightarrow \tau_2},~Constrait: \frac{\alpha_2~\alpha_3}{\alpha_1} \Rightarrow \alpha_1 = \alpha_2 \rightarrow \alpha_3\]
+\[ABS:~\frac{\Gamma,x~:~\tau_1 \vdash t~:~\tau_2}{\Gamma \vdash \lambda x.t~:~\tau_1 \rightarrow \tau_2},~Constraint: \frac{\alpha_2~\alpha_3}{\alpha_1} \Rightarrow \alpha_1 = \alpha_2 \rightarrow \alpha_3\]
 
 \subsubsection{\texttt{APP}}
-\[APP:~\frac{\Gamma \vdash t_1~:~\tau_2 \rightarrow \tau~~~~~~~\Gamma\vdash t_2~:~\tau_2}{\Gamma\vdash t_1t_2~:~\tau},~Constrait: \frac{\alpha_2~\alpha_3}{\alpha_1} \Rightarrow \alpha_2 = \alpha_3 \rightarrow \alpha_1\]
+\[APP:~\frac{\Gamma \vdash t_1~:~\tau_2 \rightarrow \tau~~~~~~~\Gamma\vdash t_2~:~\tau_2}{\Gamma\vdash t_1t_2~:~\tau},~Constraint: \frac{\alpha_2~\alpha_3}{\alpha_1} \Rightarrow \alpha_2 = \alpha_3 \rightarrow \alpha_1\]
 
 
 \subsection{Angepasste Regeln für Typschemata}
@@ -1248,7 +1248,7 @@ Namen von Klassen, Felder und Methoden müssen einem festgelegten Schema entspre
 		\item Der MPI Prozess \textit{root} jedem beteiligten Prozess ein unterschiedliches, aber gleich großes Datenelement
 		\item \texttt{MPI\_Scatterv} erlaubt das vektorbasierte Senden von unterschiedlicher Datengröße (RM24)
 		\item \texttt{int MPI\_Scatter(void* sendbuf, int sendcount, MPI\_Datatype sendtype, void* recvbuf, int recvcount, MPI\_Datatype recvtype, int root, MPI\_Comm comm)}
-		}item Implementiert in Klausur SS2015
+		\item Implementiert in Klausur SS2015
 	\end{itemize}
 	\item \textbf{\texttt{MPI\_Gather}: Sammeln (RM25)}
 	\begin{itemize}
